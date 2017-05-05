@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>MakeQuestionServlet</servlet-name>
+    <servlet-class>web.controller.MakeQuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQuestionServlet</servlet-name>
+    <servlet-class>web.controller.DoQuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MakeUIServlet</servlet-name>
+    <servlet-class>web.controller.MakeUIServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>MakeQuestionServlet</servlet-name>
+    <url-pattern>/servlet/MakeQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQuestionServlet</servlet-name>
+    <url-pattern>/servlet/DoQuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MakeUIServlet</servlet-name>
+    <url-pattern>/servlet/MakeUIServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
